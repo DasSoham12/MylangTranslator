@@ -17,6 +17,14 @@ langtranslator = LanguageTranslatorV3(version = '2018-05-01',
 ## establishing the connection with the service 
 langtranslator.set_service_url(url)
 
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden; }
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 st.title("Language-Translator")
 
 # setting up the dropdown list of language 
